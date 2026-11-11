@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AskHub.SeekerPage"
+             Title="">
+    <!--<VerticalStackLayout>
+        --><!-- WebView que ocupa toda la vista o un espacio determinado -->
+        <!--<WebView Source="https://learn.microsoft.com/dotnet/maui"
+                 VerticalOptions="Fill"
+                 HorizontalOptions="Fill" />--><!--
+        <WebView Source="https://gponcec.github.io/seeker/"
+                 VerticalOptions="Fill"
+                 HorizontalOptions="Fill" />
+    </VerticalStackLayout>-->
+
+    <Grid RowDefinitions="*">
+        <WebView Source="https://gponcec.github.io/seeker/"
+                 Grid.Row="0" />
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AskHub.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <!--<Image
+                Source="logo_edifica.jpeg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Logo de Edifica" />-->
+
+            <Label
+                Text="Login"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <!-- Campo de Usuario -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Usuario" 
+                       FontAttributes="Bold" />
+                <Entry x:Name="EmailEntry"
+                       Placeholder="Ingresa tu usuario"
+                       ClearButtonVisibility="WhileEditing" />
+            </VerticalStackLayout>
+
+            <!-- Campo de Contraseña -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Contraseña" 
+                       FontAttributes="Bold" />
+                <Entry x:Name="PasswordEntry"
+                       Placeholder="Ingresa tu contraseña"
+                       IsPassword="True" />
+            </VerticalStackLayout>
+            <Button
+                x:Name="EnterBtn"
+                Text="Entrar" 
+                SemanticProperties.Hint="Entrar a la aplicación"
+                Clicked="OnEnterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
